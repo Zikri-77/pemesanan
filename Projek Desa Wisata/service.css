@@ -1,0 +1,25 @@
+/* Hero Service Section */
+.hero-service {
+  background: url("img/sxpistols-sxpstls-o9C_1ycJ6ZY-unsplash.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+.hero-service::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-service .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card Hover */
+.hover-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}

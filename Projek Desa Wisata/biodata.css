@@ -1,0 +1,79 @@
+/* ===== HERO SECTION ===== */
+.hero-biodata {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('img/sxpistols-sxpstls-o9C_1ycJ6ZY-unsplash.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== NAVBAR FIX ===== */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ===== IMAGE STYLE ===== */
+img.rounded-circle {
+  transition: transform 0.3s ease;
+}
+img.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress {
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e9ecef;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.progress-bar {
+  font-weight: bold;
+  font-size: 0.85rem;
+  line-height: 20px;
+}
+
+/* ===== LIST GROUP ===== */
+.list-group-item {
+  font-size: 1rem;
+  border: none;
+  padding: 12px 16px;
+}
+.list-group-item i {
+  font-size: 1.2rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== ANIMATION (optional) ===== */
+.hero-biodata h1,
+.hero-biodata p {
+  animation: fadeDown 1.2s ease forwards;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

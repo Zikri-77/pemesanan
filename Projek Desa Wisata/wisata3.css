@@ -1,0 +1,45 @@
+/* HERO SECTION */
+.hero {
+  background: url("img/wet-vietnam-mountain-flow-stream-rural.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* CARD FASILITAS */
+.facility-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.facility-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
+}
+
+/* GALERI */
+section img {
+  transition: transform 0.4s ease;
+}
+section img:hover {
+  transform: scale(1.05);
+}
+
+/* NAVBAR */
+.navbar {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+  background: #0d6efd !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
